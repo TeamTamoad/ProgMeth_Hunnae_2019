@@ -3,12 +3,9 @@ package sharedObject;
 import javafx.scene.canvas.GraphicsContext;
 
 public interface IRenderable {
-	public int getZ();
+	public void tick();
 	public void draw(GraphicsContext gc);
+	public int getZ();
 	public boolean isDestroyed();
 	public boolean isVisible();
 }
-
-
-
-
